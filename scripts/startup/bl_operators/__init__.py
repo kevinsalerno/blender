@@ -25,6 +25,7 @@ _modules = [
     "grease_pencil",
     "image",
     "image_as_planes",
+    "image_to_3d",
     "mesh",
     "node",
     "object",
