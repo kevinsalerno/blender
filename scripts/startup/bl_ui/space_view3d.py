@@ -2527,6 +2527,8 @@ class VIEW3D_MT_mesh_add(Menu):
 
         layout.operator("mesh.primitive_grid_add", text="Grid", icon='MESH_GRID')
         layout.operator("mesh.primitive_monkey_add", text="Monkey", icon='MESH_MONKEY')
+        layout.separator()
+        layout.operator("import_mesh.image_to_3d", text="Image as 3D Mesh", icon='IMAGE_DATA')
 
         layout.template_node_operator_asset_menu_items(catalog_path="Add")
 
@@ -2864,6 +2866,7 @@ class VIEW3D_MT_image_add(Menu):
         layout.operator("object.empty_image_add", text="Reference...", icon='IMAGE_REFERENCE').background = False
         layout.operator("object.empty_image_add", text="Background...", icon='IMAGE_BACKGROUND').background = True
         layout.operator("image.import_as_mesh_planes", text="Mesh Plane...", icon='MESH_PLANE')
+        layout.operator("import_mesh.image_to_3d", text="Mesh 3D from Image...", icon='MESH_GRID')
         layout.operator("object.empty_add", text="Empty Image", icon='FILE_IMAGE').type = 'IMAGE'
 
 
